@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Address Book View Controller-->
+        <scene sceneID="h58-VE-MWh">
+            <objects>
+                <viewController storyboardIdentifier="AddressBookVC" id="8Ut-V6-TrF" customClass="AddressBookViewController" customModule="SystematicStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gls-Hv-qaf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-wE-WQT">
+                                <rect key="frame" x="0.0" y="64" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ycA-wE-WQT" firstAttribute="leading" secondItem="csN-WK-WCJ" secondAttribute="leading" id="5gI-um-ZWh"/>
+                            <constraint firstItem="ycA-wE-WQT" firstAttribute="top" secondItem="gls-Hv-qaf" secondAttribute="top" constant="64" id="f9S-jF-2ct"/>
+                            <constraint firstItem="ycA-wE-WQT" firstAttribute="trailing" secondItem="csN-WK-WCJ" secondAttribute="trailing" id="pEj-qC-oMP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="csN-WK-WCJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="ycA-wE-WQT" id="JQZ-cZ-LSz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3t-4T-wtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497" y="47"/>
+        </scene>
+    </scenes>
+</document>
